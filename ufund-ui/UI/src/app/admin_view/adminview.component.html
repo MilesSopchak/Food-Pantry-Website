@@ -1,0 +1,59 @@
+<div class="logout">
+    <div class="logout_button">
+        <h3>Hello {{ username }}!</h3>
+        <button (click)="logout()">Logout</button>
+    </div>
+    <div></div>
+</div>
+<div class="cupboard" [ngStyle]="{'background-color': Display ? '#F9F7F3' : '#ffcaaf'}">
+    <div class="headder">
+        <div class="box">
+            <button (click)="toggleadd()">{{ addMessage }}</button>
+        </div>
+        <h2 class="box">The Cupboard</h2>
+        <div id="search" class="box">
+            <div>
+            <label for="search-box">Search </label>
+            <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+            </div>
+        </div>
+    </div>
+    <div [hidden]="!Display">
+        <div [hidden]="!inSearch" id="search-result">
+            <ul>
+                {{ resetAlternator() }}
+                <li *ngFor="let need of needs$ | async">
+                    <div class="need" [ngStyle]="{'background-color': getColor()}">
+                        <a routerLink="/detail/{{need.id}}">
+                        {{need.name}}
+                        </a>
+                        <button (click)="delete(need)">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="message" *ngIf="showMessage">{{ message }}</div>
+        <ul [hidden]="inSearch" id="cupboard">
+            {{ resetAlternator() }}
+            <li *ngFor="let need of cupboard">
+                <div class="need" [ngStyle]="{'background-color': getColor()}">
+                    <a routerLink="/detail/{{need.id}}">
+                    {{need.name}}
+                    </a>
+                    <button (click)="delete(need)">Delete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div [hidden]="Display">
+        <div class="add">
+            <h3>New Need:</h3>
+            <input type="Name:" placeholder="Name" #name/>
+            <input type="Type:" placeholder="Type" #type/>
+            <input type="Cost:" placeholder="Cost" #cost/>
+            <input type="Quantity:" placeholder="Quantity" #quantity/>
+            <button type="button" class="add-button" (click)="add(name.value, type.value, 
+            cost.value, quantity.value); ">Add</button>
+        </div>
+    </div>
+</div>

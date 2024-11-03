@@ -1,0 +1,183 @@
+.logout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logout_button {
+  height: inherit;
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0e8c8;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style: solid;
+  border-color: #0FA3B1;
+  
+}
+
+.logout_button button {
+  background-color: #F7A072;
+  border-radius: 0;
+  color: black;
+  border-color: #F7A072;
+  border-radius: 8px;
+}
+
+.logout_button button:hover  {
+  color: white;
+  background-color: #264653;
+  border-color: #264653;
+} 
+
+.logout_button h3 {
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+.need {
+  text-align: center;
+  border-radius: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style: solid;
+  border-color: #0FA3B1;
+  margin-right: 25%;
+  margin-left: 25%;
+  background-color: #ffcaaf;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 190%;
+  background-color: #EDDEA4;
+  border-radius: 6px;
+  border-style: none none solid none;
+  border-color: #0FA3B1;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  justify-items: flex-start;
+}
+
+.container > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 150%;
+}
+
+.details {
+  border-style: none solid none none;
+  border-color: #0FA3B1;
+}
+
+.details > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0FA3B1;
+  background-color: #f0e8c8;
+  padding: 0 5% 10px 5%;
+  margin: auto;
+}
+
+.details span {
+  padding-top: 10px;
+}
+
+#top {
+  margin-bottom: 5px;
+}
+
+span {
+  padding: 0;
+}
+
+.input {
+  background-color: #f0e8c8;
+  border-radius: 0 0 6px 0;
+}
+
+.container button {
+  background-color: #F7A072;
+  color: black;
+  border-color: #F7A072;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5px;
+  font-size: 80%;
+}
+
+.container button:hover  {
+  color: white;
+  background-color: #264653;
+  border-color: #264653;
+}
+
+.input > div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0FA3B1;
+  background-color: #ffcaaf;
+  margin: 0 10% 0 10%;
+  padding: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.input > div > div:first-child {
+  margin-bottom: 10px;
+}
+
+.input > div > div > input:first-child {
+  margin-right: 10%;
+}
+
+input {
+  background-color: #F9F7F3;
+  border-radius: 7px;
+  padding: 5px;
+  text-align: center;
+  font-size: 80%;
+  width: 30%;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  padding: 0;
+  font-size: 80%;
+}
+
+#message {
+  background-color: #F7A072;
+  font-size: 80%;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 20px;
+  padding: 10px;
+}

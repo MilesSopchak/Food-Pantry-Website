@@ -1,1 +1,0 @@
-[{"id":2,"needs":[{"id":4,"name":"Cereal","type":null,"cost":5,"quantity":50},{"id":5,"name":"Chicken","type":"protein","cost":8,"quantity":50},{"id":15,"name":"Milk","type":"dairy","cost":3,"quantity":500},{"id":3,"name":"Canned Soup","type":null,"cost":2,"quantity":50}]},{"id":3,"needs":[]},{"id":4,"needs":[]},{"id":5,"needs":[]},{"id":8,"needs":[]}]

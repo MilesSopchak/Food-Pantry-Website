@@ -1,0 +1,18 @@
+<div class="signup">
+    <div class="signup_button">
+      <h3>Don't have an account?</h3>
+      <button routerLink="/signup">Signup</button>
+    </div>
+    <div></div>
+</div>
+<div class="login">
+    <h2>Login</h2>
+    <div class="container">
+        <div class="input">
+            <input type="username" placeholder="Username" #username>
+            <input type="password" placeholder="Password" #password>
+        </div>
+        <button type="button" class="submit-button" (click)="login(username.value, password.value)">Login</button>
+    </div>
+</div>
+

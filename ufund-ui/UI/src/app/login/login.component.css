@@ -1,0 +1,107 @@
+.signup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signup_button {
+    height: inherit;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f0e8c8;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: solid;
+    border-color: #0FA3B1;
+}
+
+.signup_button button {
+    background-color: #F7A072;
+    border-radius: 0;
+    color: black;
+    border-color: #F7A072;
+    border-radius: 8px;
+}
+
+.signup_button button:hover  {
+    color: white;
+    background-color: #264653;
+    border-color: #264653;
+} 
+
+.signup_button h3 {
+    padding-bottom: 5%;
+    margin: 0;
+}
+
+.login {
+    text-align: center;
+    border-radius: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: solid;
+    border-color: #0FA3B1;
+    margin-right: 25%;
+    margin-left: 25%;
+    background-color: #ffcaaf;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 190%;
+    background-color: #EDDEA4;
+    border-radius: 6px;
+    border-style: none none solid none;
+    border-color: #0FA3B1;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0e8c8;
+    border-radius: 6px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background-color: #ffcaaf;
+}
+
+.input > input {
+    margin-top: 20px;
+    background-color: #F9F7F3;
+    border-radius: 7px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    text-align: center;
+    font-size: 115%;
+}
+
+.input > input:focus {
+    outline: none;
+}
+
+.container button {
+    background-color: #F7A072;
+    border-radius: 0;
+    color: black;
+    border-color: #F7A072;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 5px;
+    font-size: 100%;
+}
+
+.container button:hover  {
+    color: white;
+    background-color: #264653;
+    border-color: #264653;
+} 

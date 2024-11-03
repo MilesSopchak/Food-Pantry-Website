@@ -1,0 +1,21 @@
+<div class="logout">
+    <div class="logout_button">
+      <h3>Hello {{ username }}!</h3>
+      <button (click)="logout()">Logout</button>
+    </div>
+    <div></div>
+</div>
+<div class="container">
+    <h2>{{username}}'s Cart</h2>
+    <li class="cart" *ngFor="let need of cart">
+        <div class="needs" *ngIf="need" [ngStyle]="{'background-color': getColor()}">
+            <h3>{{need.name}}:</h3>
+            <div class="details">
+                <span>Cost: ${{need.cost}}</span>
+                <span>Quantity: {{need.quantity}}</span>
+                <button class="button" (click)="deleteNeed([id, need.id])">Remove from Cart</button>
+            </div>
+        </div>
+    </li>
+    <button class="button" (click)="checkout(id)">Checkout</button>
+</div>
